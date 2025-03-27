@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1> Dhanalakshmi N</h1>
+            <ul class="sidebar">
+                <a href=""><i onclick="hideSideBar" class="fa-solid fa-xmark"></i></a>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="hideMenu">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu">
+                <i onclick="showSidebar()" class="fas fa-outdent bar"></i>
+            </div>
+        </nav>
+
+    </header>
+    <!--Home Section-->
+    <section class="home">
+        <div class="home-pic">
+            <img src="girlpic.jpg">
+        </div>
+        <div class="home-text">
+            <h1>About Me</h1>
+            <p>I am Dhanalakshmi, a dedicated and passionate MCA student at SMVEC. I completed my BCA at Pope John Paul
+                College and my schooling at MHSS.</p>
+        </div>
+    </section>
+    <!--Project Section-->
+   
+    <section class="project">
+        <h1><center>My Projects</center></h1>
+    <div class="card-container">
+        <div class="card">
+           <img src="https://files.codingninjas.in/article_images/custom-upload-1681454804.webp">
+           <div class="card-content">
+            <h3>Library Management System</h3>
+            <p>A Library Management System is a software application used by libraries to manage their resources efficiently.</p>
+            <a href="" class="btn">Read More</a>
+           </div>
+        </div>
+         <div class="card">
+            <img src="https://www.ubisecure.com/wp-content/uploads/2019/12/General-Election-piece.png">
+            <div class="card-content">
+             <h3>Online Voting System</h3>
+             <p>An online voting system is a software platform that allows groups to securely conduct votes and elections.</p>
+             <a href="" class="btn">Read More</a>
+            </div>
+         </div>
+         <div class="card">
+            <img src="https://thefusioneer.com/wp-content/uploads/2023/11/5-AI-Advancements-to-Expect-in-the-Next-10-Years-scaled.jpeg">
+            <div class="card-content">
+             <h3>Retrieval-Augmented Generation</h3>
+             <p>RAG is an AI framework for retrieving facts from an external knowledge base to ground (LLMs) on the most accurate and up-to-date information</p>
+             <a href="" class="btn">Read More</a>
+            </div>
+         </div>
+    </div>
+    </section>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = "flex"
+        }
+        function hideSideBar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = "none"
+        }
+    </script>
+</body>
+
+</html>
